@@ -1,13 +1,14 @@
- # nBlocksStudio neopixel 
+ # nBlocksStudio neopixel1599 
  ## NODE
 
 
 ---
 
- ![neopixel NODE](neopixel_server.JPG)
+ ![neopixel1599 NODE](neopixel1599_server.JPG)
 
 ---
-This NODE controls a neopixel string
+This NODE controls a neopixel1599 string
 
 
- Author: Ian Aherne  
+ Author: Nikos Chalikias 
+ based on Ian Aherne neopixel node

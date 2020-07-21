@@ -1,8 +1,8 @@
-#include "neopixel.h"
+#include "neopixel1599.h"
 
 
 
-nBlock_NeoPixel::nBlock_NeoPixel(PinName MOSI):_neopixel(MOSI){
+nBlock_NeoPixel1599::nBlock_NeoPixel1599(PinName MOSI):_neopixel1599(MOSI){
 	
 	greenFlag = 0; // initialise all flags to zero
 	redFlag = 0;
@@ -24,7 +24,7 @@ nBlock_NeoPixel::nBlock_NeoPixel(PinName MOSI):_neopixel(MOSI){
 */
 
 
-void nBlock_NeoPixel::triggerInput(uint32_t inputNumber, uint32_t value){
+void nBlock_NeoPixel1599::triggerInput(uint32_t inputNumber, uint32_t value){
 	
 	
 	
@@ -44,7 +44,7 @@ void nBlock_NeoPixel::triggerInput(uint32_t inputNumber, uint32_t value){
 * 
 */
 
-void nBlock_NeoPixel :: endFrame(void){
+void nBlock_NeoPixel1599 :: endFrame(void){
 	
 	if (greenFlag == 1 && redFlag == 1 && blueFlag == 1 && numberFlag == 1){
 		
