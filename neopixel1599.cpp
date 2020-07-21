@@ -48,7 +48,7 @@ void nBlock_NeoPixel1599 :: endFrame(void){
 	
 	if (greenFlag == 1 && redFlag == 1 && blueFlag == 1 && numberFlag == 1){
 		
-		_neopixel.send_colour(green,red,blue,number);
+		_neopixel1599.send_colour(green,red,blue,number);
 		
 		greenFlag = 0;
 		redFlag = 0;
