@@ -24,14 +24,14 @@ nBlock_NeoPixel1599::nBlock_NeoPixel1599(PinName MOSI):_neopixel1599(MOSI){
 */
 
 
-void nBlock_NeoPixel1599::triggerInput(uint32_t inputNumber, uint32_t value){
+void nBlock_NeoPixel1599::triggerInput(nBlocks_Message message){
 	
 	
 	
-	if (inputNumber == 0){green = (uint8_t)value;greenFlag = 1;}
-	else if(inputNumber == 1){red = (uint8_t)value;redFlag = 1;}
-	else if(inputNumber == 2){blue = (uint8_t)value;blueFlag = 1;}
-	else if(inputNumber == 3){number = (uint8_t)value; numberFlag = 1;}	
+	if (message.inputNumber == 0){green = (uint8_t)message.intValue;greenFlag = 1;}
+	else if(message.inputNumber == 1){red = (uint8_t)message.intValue;redFlag = 1;}
+	else if(message.inputNumber == 2){blue = (uint8_t)message.intValue;blueFlag = 1;}
+	else if(message.inputNumber == 3){number = (uint8_t)message.intValue; numberFlag = 1;}	
 	
 }
 
